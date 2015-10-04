@@ -12,4 +12,4 @@ In my free time, I like to read, run, do yoga, cook/bake, and travel. I am very 
 
 ### Contact me
 
-[cynthiaechen@gmail.com](cynthiaechen@gmail.com)
+[cynthiaechen@gmail.com](mailto: cynthiaechen@gmail.com)
