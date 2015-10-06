@@ -4,11 +4,11 @@ title: About
 permalink: /about/
 ---
 
-Hi, I'm Cynthia! I am currently a student at Hack Reactor. I received my B.S. and M.S. degrees in Chemical Engineering from UT Austin and UC Berkeley, respectively. I worked as a Program/Project manager at Lam Research Corporation for a year before deciding to pursue a career in web development.
+![](https://avatars3.githubusercontent.com/u/7698051?v=3&s=460)
 
-### More Information
+Hi, I'm Cynthia! I am currently a student at Hack Reactor, learning web development. I spent several years studying chemical engineering, or as I like to think of it, how to explain how our physical world works. My interests have since shifted to understanding human behavior and interactions and cultivating healthy relationships. In particular, I am very interested in the intersection between technology, mental health, and education.
 
-In my free time, I like to read, run, do yoga, cook/bake, and travel. I am very interested in the intersection between tech and mental health and education.
+In my free time, I like to have meaningful conversations, read classic literature and non-fiction, run, practice yin yoga, and travel.
 
 ### Contact me
 
