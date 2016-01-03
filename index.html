@@ -1,18 +1,172 @@
 ---
-layout: default
+layout: home
 ---
+<section class="module parallax parallax-1">
+  <div class="container">
+    <h1>Cynthia E Chen</h1>
+  </div>
+</section>
+<section class="module content" id="about">
+  <div class="container">
+    <div class="profile">
+      <img src="../images/cynthia.jpg" />
+      <h2>About Me</h2>
+      <p>I am a software engineer specializing in building full-stack and front-end applications with thoughtful design and intuitive user-experience. I am naturally very curious and enjoy exploring new technologies to expand my knowledge and understanding. I love web development because it enables me to express my creativity while solving technically challenging problems. I am experienced in frameworks and technologies including AngularJS, Backbone.js, Node.js, Express, Flask, MongoDB, MySQL, HTML, CSS, jQuery, and Bootstrap.</p>
+      <!-- <h2>Technical Skills</h2>
+      <h4>Strong: </h4><p class="tech">Javascript, AngularJS, Backbone.js, Node.js, Express, SQL, MongoDB, HTML/CSS, jQuery, Bootstrap, Git</p>
+      <h4>Experienced:</h4><p class="tech">Python, Flask, D3.js, Grunt, Gulp, Mocha/Chai</p> -->
+    </div>
+  </div>
+</section>
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+<section class="module parallax parallax-2">
+  <div class="container">
+    <h1>Work</h1>
+  </div>
+</section>
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-      <div class="entry">
-        {{ post.excerpt }}
+<section class="module content" id="portfolio">
+  <div class="container">
+    <div class="wrapper">
+      <h1>Websites</h1>
+      <div class="content-box">
+        <a href="http://www.rachelandtony.us/" target="_blank">
+          <img class="portfolio" src="../images/rt_wedding.png">
+        </a>
+        <div class="description">
+          <h2><a href="http://www.rachelandtony.us/" target="_blank">Rachel Licht &amp; Tony Ferrese Wedding</a><h2>
+          <p><i>Wedding website for my friends, Rachel Licht and Tony Ferrese</i></p>
+          <h5>Built using HTML, CSS, jQuery, and Bootstrap.</h5>
+        </div>
       </div>
+      <div class="content-box">
+        <a href="http://www.missionbit.com" target="_blank">
+          <img class="portfolio" src="../images/rt_wedding.png">
+        </a>
+        <div class="description">
+          <h2><a href="http://www.missionbit.com" target="_blank">Mission Bit</a></h2>
+          <p><i>Website for non-profit organization that offers free programming classes to high school students</i></p>
+          <h5>Built using HTML, CSS, jQuery, Bootstrap, and Font Awesome.</h5>
+        </div>
+      </div>
+    </div>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+    <div class="wrapper">
+      <h1>Applications</h1>
+      <div class="content-box">
+        <a href="http://www.beautystash.io/#/" target="_blank">
+          <img class="portfolio" src="../images/beautystash.png">
+        </a>
+        <div class="description">
+          <h2><a href="http://www.beautystash.io/#/" target="_blank">BeautyStash</a></h2>
+          <p><i>Social web application that leverages big data to allow users to catalog and share cosmetic products, recommendations, and media.</i></p>
+          <h5>Built using AngularJS, Flask, and PostgreSQL and styled with Bootstrap.</h5>
+        </div>
+      </div>
+      <div class="content-box">
+        <a href="http://moodlet.herokuapp.com/#/signin" target="_blank">
+          <img class="portfolio" src="../images/moodlet.png">
+        </a>
+        <div class="description">
+          <h2><a href="http://moodlet.herokuapp.com/#/signin" target="_blank">moodlet</a></h2>
+          <p><i>Interactive web journal that enables users to document and visualize their thoughts and feelings.</i></p>
+          <h5>Built using AngularJS, Node/Express, and PostgreSQL.</h5>
+        </div>
+      </div>
+      <div class="content-box">
+        <a href="http://rapport314.herokuapp.com/#/login" target="_blank">
+          <img class="portfolio" src="../images/rapport.png">
+        </a>
+        <div class="description">
+          <h2><a href="http://rapport314.herokuapp.com/#/login" target="_blank">Rapport</a></h2>
+          <p><i>Web chat application that connects users based on their current location or searched location.</i></p>
+          <h5>Built using AngularJS, Node/Express, and PostgreSQL.</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="module parallax parallax-3">
+  <div class="container">
+    <h1>Experience</h1>
+  </div>
+</section>
+
+<section class="module content" id="experience">
+  <div class="container">
+    <div class="wrapper">
+      <h1>Professional Experience</h1>
+      <div class="timeline-container">
+        <div class="timeline-box">     
+          <div class='model-icon-circle'>
+            <i class="fa fa-laptop fa-3x model-icon"></i>
+          </div>
+          <div class="vertical">
+            <div class="box-container">
+              <h3>Hacker in Residence</h3>
+              <h5 class="subtitle">Hack Reactor | 2015 - present</h5>
+              <ul>
+                <li>Conducted mock interviews to help students prepare for phone screens and onsite interviews.</li>
+                <li>Contributed to open source repository of technical interview questions used for Hack Reactor’s hiring process.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-box">
+          <div class='model-icon-circle'>
+            <i class="fa fa-line-chart fa-3x model-icon"></i>
+          </div>
+          <div class="vertical-right">
+            <div class="box-container right">
+              <h3>Project/Program Manager</h3>
+              <h5 class="subtitle">Lam Research Corporation | 2014 - 2015</h5>
+              <ul>
+                <li>Automated process for building corporate weekly metrics report using Excel VBA, reducing task time by 75%.</li>
+                <li>Constructed custom SQL queries to collect data to assess effectiveness of management of company’s problem reports.</li>
+                <li>Collaborated with systems experts on cross-functional projects to analyze and manage risk.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-box">
+          <div class='model-icon-circle'>
+            <i class="fa fa-university fa-3x model-icon"></i></a>
+          </div>
+          <div class="vertical">
+            <div class="box-container">
+              <h3>Graduate Student Researcher/Instructor</h3>
+              <h5 class="subtitle">University of California, Berkeley | 2011 - 2014</h5>
+              <ul>
+                <li>Investigated charge transport in novel organic materials for thermoelectric applications.</li>
+                <li>Architected and developed LabView programs to measure electrical and thermoelectric properties of materials.</li>
+                <li>Wrote weekly lesson plans and problem sets and led student discussion sessions.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="module parallax parallax-4">
+  <div class="container">
+    <h1>Interests</h1>
+  </div>
+</section>
+
+<section class="module content" id="experience">
+  <div class="container">
+    <div class="wrapper">
+      <h1>Hobbies and Personal Interests</h1>
+      <div class="content-box">
+        <p>I am passionate about understanding human behavior and interactions and cultivating healthy relationships. In particular, I am very interested in the intersection between technology, mental health, and education. In my free time, I like to have meaningful conversations, read classic literature and non-fiction, listen to and practice singing jazz, run long distances, practice yin yoga, and travel.</p>
+      </div>
+      <div class="content-box">
+        
+      </div>
+    </div>
+  </div>
+</section>
+
