@@ -2,17 +2,18 @@
 <html>
 
   {% include head.html %}
+  {% include meta.html %}
 
   <body>
 
-    {% include header.html %}
-    <div id="main" role="main">
-      {{ content }}
-    </div>
+  {% include header.html %}
+  <div id="main" role="main">
+    {{ content }}
+  </div>
 
-    {% include footer.html %}
-    <!-- {% include analytics.html %} -->
+  {% include footer.html %}
   </body>
+  {% include analytics.html %}
 
 
 </html>
