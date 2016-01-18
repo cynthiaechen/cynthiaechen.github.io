@@ -69,6 +69,7 @@ h5 {
 
 p {
   padding: 10px 0 10px 0;
+  text-align: justify;
 }
 
 a {
@@ -318,7 +319,12 @@ section.module.parallax-4 {
 
 .profile {
   text-align: justify;
-  height: 300px;
+  min-height: 300px;
+
+  @include mobile {
+    padding: 10px;
+
+  }
 
   img {
     width: auto;
@@ -330,13 +336,7 @@ section.module.parallax-4 {
     
     @include mobile {
     float: none;
-    margin: 10px auto;
-    }
-  }
-
-  p {
-    @include mobile {
-      padding: 10px;
+    margin: 0 auto;
     }
   }
 }
@@ -349,6 +349,10 @@ section.module.parallax-4 {
   padding: 25px;
   overflow: auto;
   margin-bottom: 50px;
+
+  @include mobile {
+    padding: 10px;
+  }
 }
 
 .project-title {
@@ -358,6 +362,7 @@ section.module.parallax-4 {
 
 .project-title p {
   color: #565656;
+  text-align: center;
 }
 
 .portfolio {
@@ -383,6 +388,14 @@ section.module.parallax-4 {
   padding: 30px;
   padding-top: 0;
   padding-bottom: 0;
+
+  @include mobile {
+    padding: 10px;
+  }
+
+  p {
+    padding-bottom: 25px;
+  }
 }
 
 // Experience
@@ -397,7 +410,7 @@ section.module.parallax-4 {
   overflow: auto;
 
   @include mobile {
-    display: none;
+    width: auto;
   }
 }
 
