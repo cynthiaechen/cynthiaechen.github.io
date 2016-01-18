@@ -251,6 +251,10 @@ nav {
 .container {
   max-width: 960px;
   margin: 0 auto;
+
+  @include mobile {
+    width: auto;
+  }
 }
 
 
@@ -323,6 +327,17 @@ section.module.parallax-4 {
     border-radius: 5px;
     float: left;
     margin-right: 50px;
+    
+    @include mobile {
+    float: none;
+    margin: 10px auto;
+    }
+  }
+
+  p {
+    @include mobile {
+      padding: 10px;
+    }
   }
 }
 
@@ -370,10 +385,6 @@ section.module.parallax-4 {
   padding-bottom: 0;
 }
 
-.description p {
-  padding-bottom: 25px;;
-}
-
 // Experience
 
 .timeline-container {
@@ -383,7 +394,11 @@ section.module.parallax-4 {
 .timeline-box {
   padding: 0 10px;
   margin-bottom: -5px;
-  overflow: auto; 
+  overflow: auto;
+
+  @include mobile {
+    display: none;
+  }
 }
 
 .vertical {
@@ -392,6 +407,10 @@ section.module.parallax-4 {
   border-right: 10px solid $blue;
   padding: 25px 25px 25px 0;
   margin-top: -5px;
+
+  @include mobile {
+    display: none;
+  }
 }
 
 .vertical-right {
@@ -401,6 +420,10 @@ section.module.parallax-4 {
   padding: 25px 0 25px 25px;
   margin-top: -5px;
   float: right;
+
+  @include mobile {
+    display: none;
+  }
 }
 
 .model-icon-circle {
@@ -411,18 +434,30 @@ section.module.parallax-4 {
   border-radius: 50%;
   border: 1px solid #e5e5e5;
   box-shadow: 0 0 15px rgba(0, 0, 0, .25);
+
+  @include mobile {
+    display: none;
+  }
 }
 
 .model-icon {
   padding-top: 20px;
   padding-left: 3px;
   color: $blue;
+
+  @include mobile {
+    display: none;
+  }
 }
 
 .box-container {
   border: 1px solid #e5e5e5;
   box-shadow: 0 0 15px rgba(0, 0, 0, .25);
   padding: 15px;
+
+  @include mobile {
+    width: auto;
+  }
 }
 
 .box-container:hover {
@@ -487,9 +522,3 @@ footer {
 .social-icons {
   margin-right: 5px;
 }
-
-
-// Settled on moving the import of syntax highlighting to the bottom of the CSS
-// ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
-@import "highlights";
-@import "svg-icons";
