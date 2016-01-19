@@ -68,7 +68,7 @@ h5 {
 }
 
 p {
-  padding: 10px 0 10px 0;
+  padding: 10px;
   text-align: justify;
 }
 
@@ -218,6 +218,7 @@ img {
 
   @include mobile {
     margin: 3px 0;
+    text-align: center;
   }
 }
 
@@ -320,10 +321,17 @@ section.module.parallax-4 {
 .profile {
   text-align: justify;
   min-height: 300px;
+  padding: 25px;
 
   @include mobile {
     padding: 10px;
 
+  }
+
+  h2 {
+    @include mobile {
+      text-align: center;
+    }
   }
 
   img {
@@ -336,7 +344,7 @@ section.module.parallax-4 {
     
     @include mobile {
     float: none;
-    margin: 0 auto;
+    max-width: 100%;
     }
   }
 }
@@ -422,7 +430,8 @@ section.module.parallax-4 {
   margin-top: -5px;
 
   @include mobile {
-    display: none;
+    border: none;
+    width: auto;
   }
 }
 
@@ -435,7 +444,10 @@ section.module.parallax-4 {
   float: right;
 
   @include mobile {
-    display: none;
+    float: none;
+    border: none;
+    padding: 25px 25px 25px 0;
+    width: auto;
   }
 }
 
@@ -528,8 +540,13 @@ section.module.parallax-4 {
 
 footer {
   padding: 20px 0;
-  text-align: center;
   font-size: 14px;
+  text-align: center;
+
+
+  p {
+    text-align: center;
+  }
 }
 
 .social-icons {
