@@ -15,6 +15,11 @@
 
 html {
   font-size: 100%;
+
+  @include mobile {
+    width: 100%;
+    margin: 0;
+  }
 }
 
 body {
@@ -255,10 +260,9 @@ nav {
   margin: 0 auto;
 
   @include mobile {
-    width: auto;
+    max-width: 100%;
   }
 }
-
 
 section.module p {
   margin-bottom: 0;
@@ -278,6 +282,10 @@ section.module.content {
     cursor: pointer;
     color: $black;
   }
+
+  @include mobile {
+    width: auto;
+  }
 }
 
 section.module.parallax {
@@ -285,6 +293,11 @@ section.module.parallax {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+
+  @include mobile {
+    width: auto;
+    height: 200px;
+  }
 }
 
 section.module.parallax h1 {
@@ -293,6 +306,10 @@ section.module.parallax h1 {
   text-align: center;
   padding-top: 250px;
   font-size: 50px;
+
+  @include mobile {
+    padding-top: 50px;
+  }
 }
 
 section.module.parallax-1 {
@@ -314,6 +331,10 @@ section.module.parallax-4 {
 
 .wrapper {
   margin: 25px 50px;
+
+  @include mobile {
+    margin: 10px 25px;
+  }
 }
 
 // About
@@ -345,6 +366,7 @@ section.module.parallax-4 {
     @include mobile {
     float: none;
     max-width: 100%;
+    margin: 0;
     }
   }
 }
@@ -361,6 +383,10 @@ section.module.parallax-4 {
   @include mobile {
     padding: 10px;
   }
+}
+
+.content-box:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, .6);
 }
 
 .project-title {
@@ -432,6 +458,7 @@ section.module.parallax-4 {
   @include mobile {
     border: none;
     width: auto;
+    padding: 10px;
   }
 }
 
@@ -446,8 +473,8 @@ section.module.parallax-4 {
   @include mobile {
     float: none;
     border: none;
-    padding: 25px 25px 25px 0;
     width: auto;
+    padding: 10px;
   }
 }
 
@@ -552,3 +579,8 @@ footer {
 .social-icons {
   margin-right: 5px;
 }
+
+// Settled on moving the import of syntax highlighting to the bottom of the CSS
+// ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
+@import "highlights";
+@import "svg-icons";
