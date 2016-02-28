@@ -73,16 +73,16 @@ h5 {
 }
 
 p {
-  padding: 10px;
+  padding: 0 10px 10px 7px;
   text-align: justify;
 }
 
 a {
-  color: $blue;
+  color: $gray;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: $blue;
+    color: $darkGray;
   }
 }
 
@@ -228,8 +228,9 @@ img {
 }
 
 nav {
-  float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
+  position: absolute;
+  top: 25px;
+  right: 25px;
   font-family: $helveticaNeue;
   font-size: 18px;
 
@@ -289,31 +290,44 @@ section.module.content {
 }
 
 section.module.parallax {
-  height: 600px;
+  min-height: 700px;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 
   @include mobile {
     width: auto;
-    height: 200px;
+    min-height: 400px;
   }
 }
 
 section.module.parallax h1 {
   font-family: 'Crete Round', serif;
-  color: $white;
+  color: $darkGray;
   text-align: center;
   padding-top: 250px;
   font-size: 50px;
+  margin-bottom: 0;
 
   @include mobile {
-    padding-top: 50px;
+    padding-top: 150px;
+  }
+}
+
+section.module.parallax h2 {
+  color: $gray;
+  text-align: center;
+  padding-top: 5px;
+  font-size: 30px;
+  margin: 0;
+
+  @include mobile {
+    padding-top: 10px;
   }
 }
 
 section.module.parallax-1 {
-  background-image: url("../images/parallax1.jpg");
+  background-image: url("../images/parallax3.jpg");
   margin-top: -50px;
 }
 
@@ -350,6 +364,7 @@ section.module.parallax-4 {
   }
 
   h2 {
+    padding-bottom: 5px;
     @include mobile {
       text-align: center;
     }
@@ -358,7 +373,7 @@ section.module.parallax-4 {
   img {
     width: auto;
     height: auto;
-    max-width: 288px;
+    max-width: 300px;
     border-radius: 5px;
     float: left;
     margin-right: 50px;
