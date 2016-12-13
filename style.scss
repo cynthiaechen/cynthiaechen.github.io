@@ -303,7 +303,7 @@ section.module.parallax {
 
 section.module.parallax h1 {
   font-family: 'Crete Round', serif;
-  color: $darkGray;
+  color: #f4f3f3;
   text-align: center;
   padding-top: 250px;
   font-size: 50px;
@@ -315,7 +315,7 @@ section.module.parallax h1 {
 }
 
 section.module.parallax h2 {
-  color: $gray;
+  color: $white;
   text-align: center;
   padding-top: 5px;
   font-size: 30px;
@@ -327,7 +327,7 @@ section.module.parallax h2 {
 }
 
 section.module.parallax-1 {
-  background-image: url("../images/parallax3.jpg");
+  background-image: url("../images/parallax1.jpg");
   margin-top: -50px;
 }
 
@@ -426,6 +426,7 @@ section.module.parallax-4 {
   box-shadow: 0 0 15px rgba(0, 0, 0, .25);
   margin: 0 auto;
   margin-bottom: 25px;
+  border-radius: 5px 5px 5px 5px;
 }
 
 .portfolio:hover {
